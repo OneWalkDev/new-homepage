@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import RepoCard from "react-repo-card";
 import type { IconType } from "react-icons";
 import {
   FaAws,
@@ -56,6 +55,64 @@ const skillCategories: {
   { title: "フレームワーク / ライブラリ", skills: FWSkills },
   { title: "その他", skills: OtherSkills },
 ];
+
+type RepoShowcase = {
+  owner: string;
+  name: string;
+  description: string;
+  language: string;
+};
+
+const repoShowcases: RepoShowcase[] = [
+  { owner: "SpaceServerDev", name: "Purin" , description: "NewSpaceServerのメインプラグイン", language: "PHP"},
+  { owner: "OneWalkDev", name: "PlayerInfoScoreBoard" , description: "ダウンロード数4500回を超えたPMMPプラグイン", language: "PHP"},
+  { owner: "SpaceServerUniverse", name: "UniverseCoreV2", "description": "SpaceServerUniverseのメインプラグイン", language: "Java"},
+  { owner: "OneWalkDev", name: "Livefuns-scraper" , "description": "Livefunsから指定したアーティストのイベントとセットリストを取得", "language": "python"},
+  { owner: "OneWalkDev", name: "smart_room" , "description": "スマートホームを実現。リモコンを家中どこからでも操作", "language": "Python + webiopi"},
+  { owner: "OneWalkDev", name: "DiscordMusicBot.py" , "description": "discordの音楽再生bot、元はC#で作っていたものをPythonに移行", "language": "python"},
+  { owner: "OneWalkDev", name: "JellyParfait" , "description": "youtube音楽再生ソフトウェア。プレイリストなど幅広く対応", "language": "C#"},
+  { owner: "AvailsGroup", name: "Amica" , "description": "専門学校の友達出会い系サイト", "language": "Ruby + Rails5"},
+];
+
+function RepoCard({
+  owner,
+  name,
+  description,
+  language,
+}: RepoShowcase) {
+  const [repo, setRepo] = React.useState({
+    owner,
+    name,
+    description,
+    language,
+    htmlUrl: `https://github.com/${owner}/${name}`,
+  });
+
+  return (
+    <div className="project-card">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <a
+            className="text-lg font-semibold hover:text-cyan-300 transition-colors"
+            href={repo.htmlUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {repo.owner} / {repo.name}
+          </a>
+          <p className="text-sm text-slate-200 mt-2">
+            {repo.description ?? "GitHub repository"}
+          </p>
+        </div>
+        {repo.language && (
+          <span className="text-xs px-2 py-1 rounded bg-slate-800 text-slate-100">
+            {repo.language}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -260,41 +317,10 @@ export default function Home() {
 
           <div className="mt-12">
             <h2 className="section-title">制作作品</h2>
-            <div className="my-5">
-              <RepoCard username="SpaceServerDev" repository="Purin"></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard
-                username="OneWalkDev"
-                repository="PlayerInfoScoreBoard"
-              ></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard
-                username="SpaceServerUniverse"
-                repository="UniverseCoreV2"
-              ></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard
-                username="OneWalkDev"
-                repository="Livefuns-scraper"
-              ></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard
-                username="OneWalkDev"
-                repository="smart_room"
-              ></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard
-                username="OneWalkDev"
-                repository="DiscordMusicBot.py"
-              ></RepoCard>
-            </div>
-            <div className="my-5">
-              <RepoCard username="AvailsGroup" repository="Amica"></RepoCard>
+            <div className="grid gap-5">
+              {repoShowcases.map((repo) => (
+                <RepoCard key={`${repo.owner}/${repo.name}`} {...repo} />
+              ))}
             </div>
           </div>
 
