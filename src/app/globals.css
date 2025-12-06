@@ -78,7 +78,7 @@ h1 {
 }
 
 .lede {
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
   color: #6b7280;
   max-width: 720px;
 }
@@ -377,4 +377,18 @@ code {
   width: 24px;
   height: 24px;
   border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 72px 16px;
+  }
+
+  .hero {
+    padding: 32px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

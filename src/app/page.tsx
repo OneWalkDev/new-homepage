@@ -29,13 +29,13 @@ const langSkills: { name: string; icon: IconType }[] = [
   { name: "C#", icon: SiCsharp },
   { name: "TypeScript", icon: SiTypescript },
   { name: "Java", icon: FaJava },
-  { name: "Python", icon: FaPython}
+  { name: "Python", icon: FaPython },
 ];
 
 const FWSkills: { name: string; icon: IconType }[] = [
   { name: "Laravel", icon: FaLaravel },
   { name: ".NET", icon: SiDotnet },
-  { name: "Jquery", icon:SiJquery },
+  { name: "Jquery", icon: SiJquery },
   { name: "React", icon: FaReact },
   { name: "Next.js", icon: SiNextdotjs },
   { name: "Ruby on Rails", icon: SiRubyonrails },
@@ -67,9 +67,11 @@ export default function Home() {
             className="w-[200px] rounded-full mx-auto mb-6"
           />
           <h1 className="text-center">Kazuho Utsunomiya</h1>
-          <p className="lede text-center mx-auto">
-            Web Developer / Application Developer
-          </p>
+          <div className="w-full">
+            <p className="lede text-center mx-auto w-full">
+              Web Developer / Application Developer
+            </p>
+          </div>
           <div className="flex justify-center gap-3 mt-4">
             <a
               href="https://github.com/OneWalkDev"
@@ -322,8 +324,14 @@ export default function Home() {
 
           <div className="mt-12">
             <h2 className="section-title">お問い合わせ</h2>
-            <p>ご連絡はメールにてお願い致します。下記のリンクをクリックして下さい。</p>
-            <p><a className="underline" href="mailto:kazuhowork@gmail.com">kazuhowork[@]gmail.com</a></p>
+            <p>
+              ご連絡はメールにてお願い致します。下記のリンクをクリックして下さい。
+            </p>
+            <p>
+              <a className="underline" href="mailto:kazuhowork@gmail.com">
+                kazuhowork[@]gmail.com
+              </a>
+            </p>
           </div>
         </div>
       </main>
