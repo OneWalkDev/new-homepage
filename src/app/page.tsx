@@ -77,6 +77,7 @@ type Experience = {
 };
 
 const repoShowcases: RepoShowcase[] = [
+  { owner: "OneWalkDev", name: "myworksystem" , "description": "案件、売上管理システム", "language": "Laravel + Sanctum + Next.js + Typescript"},
   { owner: "SpaceServerDev", name: "Purin" , description: "NewSpaceServerのメインプラグイン", language: "PHP"},
   { owner: "OneWalkDev", name: "PlayerInfoScoreBoard" , description: "ダウンロード数4500回を超えたPMMPプラグイン", language: "PHP"},
   { owner: "SpaceServerUniverse", name: "UniverseCoreV2", "description": "SpaceServerUniverseのメインプラグイン", language: "Java"},
