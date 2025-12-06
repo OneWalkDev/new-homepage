@@ -250,7 +250,7 @@ export default function Home() {
               <FaGithub size={22} />
             </a>
             <a
-              href="mailto:kazuhowork@gmail.com"
+              href="mailto:contact@onewalk.dev"
               className="social-link"
               aria-label="Email"
             >
@@ -353,8 +353,8 @@ export default function Home() {
               ご連絡はメールにてお願い致します。下記のリンクをクリックして下さい。
             </p>
             <p>
-              <a className="underline" href="mailto:kazuhowork@gmail.com">
-                kazuhowork[@]gmail.com
+              <a className="underline" href="mailto:contact@onewalk.dev">
+                contact[@]onewalk.dev
               </a>
             </p>
           </div>
