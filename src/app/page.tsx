@@ -78,6 +78,7 @@ type Experience = {
 
 const repoShowcases: RepoShowcase[] = [
   { owner: "OneWalkDev", name: "myworksystem" , "description": "案件、売上管理システム", "language": "Laravel + Sanctum + Next.js + Typescript"},
+  { owner: "OneWalkDev", name: "googlemap-timeline", "description": "廃止になったGoogleMapTimelineを復活させるシステム", "language": "Next.js + Typescript + leaflet"},
   { owner: "SpaceServerDev", name: "Purin" , description: "NewSpaceServerのメインプラグイン", language: "PHP"},
   { owner: "OneWalkDev", name: "PlayerInfoScoreBoard" , description: "ダウンロード数4500回を超えたPMMPプラグイン", language: "PHP"},
   { owner: "SpaceServerUniverse", name: "UniverseCoreV2", "description": "SpaceServerUniverseのメインプラグイン", language: "Java"},
@@ -140,11 +141,19 @@ const personalProjects: Experience[] = [
     ],
   },
   {
+    title: "廃止されたGoogleMapTimelineをPC上で可視化するシステム",
+    period: "2025",
+    details: [
+      "バックアップ用で取得できるlocation_history.jsonを用いて、マップ上にピンを刺すことによって自分が立ち寄った場所をWEB上で可視化できるwebアプリです。",
+      "Next.js + Typescriptを主に用い、マップはleafletを使用しています。",
+    ],
+  },
+  {
     title: "フリーランス管理ソフトの開発",
     period: "2025",
     details: [
       "案件管理と売上管理ソフトを開発しています。",
-      "バックエンドはLaravel + Sanctum フロントエンドは Next.js + typescriptを利用して、webソフトウェアの開発を行っています。",
+      "バックエンドはLaravel + Sanctum フロントエンドは Next.js + Typescriptを利用して、webソフトウェアの開発を行っています。",
     ],
   },
 ];
