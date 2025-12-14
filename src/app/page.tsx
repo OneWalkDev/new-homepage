@@ -77,6 +77,7 @@ type Experience = {
 };
 
 const repoShowcases: RepoShowcase[] = [
+  { owner: "OneWalkDev", name: "musical" , "description": "1日1回音楽交換サイト", "language": "Laravel + Sanctum + Next.js + Typescript"},
   { owner: "OneWalkDev", name: "myworksystem" , "description": "案件、売上管理システム", "language": "Laravel + Sanctum + Next.js + Typescript"},
   { owner: "OneWalkDev", name: "googlemap-timeline", "description": "廃止になったGoogleMapTimelineを復活させるシステム", "language": "Next.js + Typescript + leaflet"},
   { owner: "SpaceServerDev", name: "Purin" , description: "NewSpaceServerのメインプラグイン", language: "PHP"},
