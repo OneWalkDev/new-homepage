@@ -126,10 +126,10 @@ const personalProjects: Experience[] = [
   },
   {
     title: "SpaceServerUniverseの制作",
-    period: "2023 - 2024",
+    period: "2023 - 現在",
     details: [
-      "Minecraft JEのサーバー「SpaceServerUniverse」を開発していました。",
-      "Javaを用いた開発で、クリーンアーキテクチャを使用し作成しました。",
+      "Minecraft JEのサーバー「SpaceServerUniverse」を開発しています。",
+      "Javaを用いた開発で、ゆるめのクリーンアーキテクチャを使用し作成しました。",
       "10人ほどのエンジニアの方々と協力して、運営者・開発者として活躍しました。",
     ],
   },
@@ -177,6 +177,15 @@ const workExperiences: Experience[] = [
       "小売店向けの在庫管理システムを作成しました。",
       "3人チームでの開発で上手くチームを率いることができました。",
       "バックエンド側にはLaravelを使用、フロントエンド側はJQueryを使用していました。",
+    ],
+  },
+  {
+    title: "介護マッチングシステムの作成",
+    period: "2026",
+    details: [
+      "スタートアップ企業の要介護者と介護士ををマッチングするサービスを開発しています。",
+      "チーム開発でアジャイル開発を使用して行っています。",
+      "DDDを活用し、Laravel Next.jsでの開発を行っています。",
     ],
   },
 ];
