@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Kazuho Utsunomiya | Portfolio</title>
+  <desc>Web Developer / Webシステムの開発・改善 / onewalk.dev</desc>
+  <rect width="1200" height="630" fill="#0d1117" />
+  <rect x="52" y="48" width="1096" height="534" rx="14" fill="#161b22" />
+  <path d="M52 112H1148" stroke="#30363d" />
+  <rect x="52" y="48" width="1096" height="534" rx="14" fill="none" stroke="#7ee787" stroke-width="1.5" />
+  <circle cx="84" cy="80" r="6" fill="#ff7b72" />
+  <circle cx="106" cy="80" r="6" fill="#e3b341" />
+  <circle cx="128" cy="80" r="6" fill="#7ee787" />
+  <text x="166" y="87" font-size="18" font-family="monospace" data-font="latin" fill="#a8b3bf">portfolio</text>
+  <text x="104" y="194" font-size="22" font-family="monospace" data-font="latin" fill="#7ee787">$ whoami</text>
+  <text x="101" y="282" font-size="70" font-family="monospace" font-weight="700" data-font="latin" fill="#e6edf3">Kazuho Utsunomiya</text>
+  <text x="104" y="344" font-size="30" font-family="monospace" data-font="latin" fill="#7ee787">Web Developer</text>
+  <text x="102" y="410" font-size="34" font-family="sans-serif" data-font="japanese" fill="#e6edf3">Webシステムの開発・改善</text>
+  <text x="104" y="526" font-size="24" font-family="monospace" data-font="latin" fill="#a8b3bf">onewalk.dev</text>
+  <text x="1032" y="526" font-size="24" font-family="monospace" data-font="latin" fill="#7ee787">&gt;_</text>
+</svg>
