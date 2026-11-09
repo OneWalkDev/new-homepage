@@ -285,8 +285,8 @@ test("a native menu closed on mobile retains a desktop reopening control without
 });
 
 test("all existing GitHub URLs survive; favorite-band copy and links are explicitly omitted", () => {
-  assert.doesNotMatch(documentHtml, /SpaceServerDev\/Purin|OneWalkDev\/PlayerInfoScoreBoard/);
-  const repos = ["OneWalkDev/musical", "OneWalkDev/myworksystem", "OneWalkDev/googlemap-timeline", "SpaceServerUniverse/UniverseCoreV2", "OneWalkDev/Livefuns-scraper", "OneWalkDev/smart_room", "OneWalkDev/DiscordMusicBot.py", "OneWalkDev/JellyParfait", "AvailsGroup/Amica"];
+  assert.doesNotMatch(documentHtml, /SpaceServerDev\/Purin|OneWalkDev\/PlayerInfoScoreBoard|Livefuns|Livefans/i);
+  const repos = ["OneWalkDev/musical", "OneWalkDev/myworksystem", "OneWalkDev/googlemap-timeline", "SpaceServerUniverse/UniverseCoreV2", "OneWalkDev/smart_room", "OneWalkDev/DiscordMusicBot.py", "OneWalkDev/JellyParfait", "AvailsGroup/Amica"];
   const personal = section("personal.txt");
   for (const repo of ["OneWalkDev", ...repos]) assert.ok(personal.includes(`href="https://github.com/${repo}"`), repo);
   // The user explicitly withdrew preservation of these two activity links and the associated band copy.
