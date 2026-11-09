@@ -109,7 +109,6 @@ export const repositories = [
   { owner: "OneWalkDev", name: "musical", description: "1日1回の音楽交換サイト", technologies: "Laravel / Sanctum / Next.js / TypeScript" },
   { owner: "OneWalkDev", name: "googlemap-timeline", description: "位置履歴のバックアップをPCの地図上で可視化するWebアプリ", technologies: "Next.js / TypeScript / Leaflet" },
   { owner: "SpaceServerUniverse", name: "UniverseCoreV2", description: "SpaceServerUniverseの主要な拡張機能（プラグイン）", technologies: "Java" },
-  { owner: "OneWalkDev", name: "Livefuns-scraper", description: "Livefansからアーティストのイベントとセットリストを取得するツール", technologies: "Python" },
   { owner: "OneWalkDev", name: "smart_room", description: "家の中からリモコンを操作するスマートホームシステム", technologies: "Python / FastAPI" },
   { owner: "OneWalkDev", name: "DiscordMusicBot.py", description: "C#からPythonへ移行したDiscordの音楽再生Bot", technologies: "Python" },
   { owner: "OneWalkDev", name: "JellyParfait", description: "プレイリストに対応したYouTube音楽再生ソフトウェア", technologies: "C#" },
